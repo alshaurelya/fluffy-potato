@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TM 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main-contact">
+            <h1>Contact Me</h1>
+            <div class="main-contact-input">
+                <form id="contactForm" class="contact-form" action="" enctype="text/plain">
+                    <div class="form-group">
+                      <label class="contact-label" for="subject">Subject:</label>
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        class="form-control"
+                        maxlength="24"
+                        placeholder="Write the subject here..."
+                        min="5"
+                        required
+                      />
+                    </div>
+              
+                    <div class="form-group">
+                      <label class="contact-label" for="body">Message:</label>
+                      <textarea
+                        id="body"
+                        name="body"
+                        class="form-control"
+                        rows="4"
+                        maxlength="540"
+                        minlength="20"
+                        placeholder="Write your message here..."
+                        required
+                      ></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" id="submit_button" class="btn-submit" onclick="sendMail()"></button>
+                    </div>
+                </form>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
